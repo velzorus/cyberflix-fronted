@@ -20,7 +20,7 @@
     --cuevana-color-background: rgb(9, 15, 41);
     --cuevana-color-subtitles: rgb(28, 38, 69);
     --cuevana-color-search: rgb(14, 21, 45);
-    --orange-color: #f44336;
+    --orange-color: rgb(244, 67, 48);
 
     --ff-inter: "Inter", sans-serif;
 
@@ -51,6 +51,16 @@ Mofificaciones
 
 .pagination button{
     border-radius: 5rem;
+    background-color: rgba(244, 67, 48, 0.85);
+    border: none;
+}
+
+.pagination button:disabled {
+    background-color: var(--orange-color);
+}
+
+.pagination button:hover {
+    background-color: var(--orange-color);
 }
 
 .page-number {
