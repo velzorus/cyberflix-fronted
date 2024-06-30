@@ -20,7 +20,7 @@
     --cuevana-color-background: rgb(9, 15, 41);
     --cuevana-color-subtitles: rgb(28, 38, 69);
     --cuevana-color-search: rgb(14, 21, 45);
-    --orange-color: rgb(244, 67, 48);
+    --orange-color: rgb(244, 67, 54);
 
     --ff-inter: "Inter", sans-serif;
 
@@ -51,7 +51,7 @@ Mofificaciones
 
 .pagination button{
     border-radius: 5rem;
-    background-color: rgba(244, 67, 48, 0.85);
+    background-color: var(--orange-color);
     border: none;
 }
 
@@ -60,7 +60,7 @@ Mofificaciones
 }
 
 .pagination button:hover {
-    background-color: var(--orange-color);
+    background-color: rgba(244, 67, 48, 0.8);
 }
 
 .page-number {
@@ -242,11 +242,11 @@ a {
     padding: 10px 0px 10px 0px;
 }
 .navbar-link:hover {
-    color: #f44336;
+    color: var(--orange-color);
 }
 
 .orange-color {
-    color: #f44336;
+    color: var(--orange-color);
 }
 
 .nav-admin {
@@ -295,15 +295,17 @@ a {
 
 .btn-control:hover {
     background-color: var(--cuevana-color-search);
-    color: #f44336;
+    color: var(--orange-color);
 }
 
 .btn-login {
-    background: rgb(131,58,180);
-    background: -moz-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#fcb045",GradientType=1);
+    background-color: var(--orange-color);
+    border: none;
+    color: var(--off-white);
+}
+
+.btn-login:hover {
+    background-color: rgba(244, 67, 54, 0.8);
     border: none;
     color: var(--off-white);
 }
@@ -439,11 +441,12 @@ input ~ .checked-radio-bg {
 
 .movie-card .bookmark {
   background: var(--oxford-blue);
+  color: rgba(244, 67, 48, 0.70);
   left: 15px;
 }
 
 .movie-card .bookmark:hover {
-  color: var(--yellow);
+  color: var(--orange-color);
 }
 
 .movie-card .rating {
@@ -451,6 +454,7 @@ input ~ .checked-radio-bg {
     align-items: center;
     right: 15px;
     background: var(--oxford-blue-50);
+    color: var(--yellow);
 }
 
 .movie-card .rating span {
@@ -637,7 +641,7 @@ input ~ .checked-radio-bg {
 }
 
 .title-login span {
-    color: #f44336;
+    color: var(--orange-color);
 }
 
 .subtitle-login {
@@ -668,6 +672,11 @@ input ~ .checked-radio-bg {
     border: none;
 }
 
+.pass-form button:hover {
+    background: rgba(244, 67, 54, 0.8);
+    border: none;
+}
+
 /* Start Form Search Biblioteca */
 .search_form {
   display: flex;
@@ -689,7 +698,7 @@ input ~ .checked-radio-bg {
 }
 
 .searchTerm:focus {
-    border-color: #f44336;
+    border-color: var(--orange-color);
 }
   
 .searchTerm::placeholder {
@@ -704,14 +713,14 @@ input ~ .checked-radio-bg {
 }
 
 .searchAnio:focus {
-    border: 2px solid #f44336;
+    border: 2px solid var(--orange-color);
     box-shadow: none;
 }
 
 .searchButton {
     width: 60px;
     height: 46px;
-    background-color: #f44336;
+    background-color: var(--orange-color);
     color: #fff;
     border: none;
     border-radius: 0 5rem 5rem 0;
